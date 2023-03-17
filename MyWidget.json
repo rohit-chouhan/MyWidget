@@ -1,0 +1,53 @@
+{
+    "id": "com.rohitchouhan.rohitchouhan.mywidget",
+    "version": "1.0.0",
+    "name": "MyWidget",
+    "description": "A simple widget",
+    "newInstancePrefix": "MyWidget",
+    "vendor": "Rohit Chouhan",
+    "eula": "",
+    "license": "MIT",
+    "icon": "https://raw.githubusercontent.com/rohit-chouhan/MyWidget/main/icon.png",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-rohitchouhan-sap-mywidget",
+            "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/MyWidget/MyWidget.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "com-rohitchouhan-sap-mywidget-builder",
+            "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/MyWidget/MyWidget_Builder.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "color": {
+            "description": "A color input",
+            "type": "string",
+            "default": ""
+        }
+    },
+    "methods": {
+        "setColor": {
+            "description": "Set A color input",
+            "parameters": [
+                {
+                    "name": "color",
+                    "type": "string",
+                    "description": "Data for A color input"
+                }
+            ],
+            "body": "this.color = color;"
+        },
+        "getColor": {
+            "returnType": "string",
+            "description": "Return A color input",
+            "body": "return this.color;"
+        }
+    },
+    "events": {}
+}
